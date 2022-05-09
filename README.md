@@ -1,6 +1,6 @@
-# Oregon Fire Analysis and Prediction (2005-2015)
+# Oregon Fire Analysis and Prediction (1992-2015)
 ## Backround
-As data analysts we want to use our skills to help our local and global communities, so for this project we wanted to explore an issue regarding climate-change. As Oregonians the issue of wildfires is of recurring relevance to our lives. After decades of ever-more frequent wildfires Oregon saw its worst fire season in 2021. With average temperatures continuing to rise locally and around the globe, the situation shows no signs of slowing. We discovered a great dataset with which to explore this topic. This data is from Kaggle and includes an SQLite file and various CSV files containing data about 1.88 million US wildfires over 10 years.
+As data analysts we want to use our skills to help our local and global communities, so for this project we wanted to explore an issue regarding climate-change. As Oregonians the issue of wildfires is of recurring relevance to our lives. After decades of ever-more frequent wildfires Oregon saw its worst fire season in 2021. With average temperatures continuing to rise locally and around the globe, the situation shows no signs of slowing. We discovered a great dataset with which to explore this topic. This data is from Kaggle and includes an SQLite file and various CSV files containing data about 1.88 million US wildfires over 23 years.
 
 Questions we hope to answer in the coming weeks:
 
