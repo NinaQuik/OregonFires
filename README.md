@@ -83,14 +83,14 @@ For each model, separate out the target variable.
 
 Notes for next week: Because the data only goes through 2017, we can use the models to make predictions into the future and test it's accuracy using more recent data. The goal is to project these data into future years to get an understanding of fire behavior in Oregon and what we might expect in the upcoming years. One thought was to include air quality data, which affects us across the state, and may help determine areas of refuge for people during the fire season. I will look to see if we have any data for that as well. 
 
-## Mockup Database
-We are proposing using PostgresSQL possibly running in either Heroku or AWS.
+## Database
+We will be using postgresql running in AWS RDS.
 
 Here is the ERD containing the graphical representation of table relationships:
 
 ![ERD](/Resources/ERD.png)
 
-We are exploring also using air quality data.  If so, additional tables will be created based on that dataset.
+We are exploring also using air quality data.  If chosen, additional tables will be created and added to the database.
 
 ## Presentation
 Our presentation will likely contain the following:
