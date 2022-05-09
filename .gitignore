@@ -11,6 +11,8 @@ FPA_FOD_20170508.sqlite
 #Exlcude the large .csv file
 oregon_fires.csv
 
+config.py
+
 # Distribution / packaging
 .Python
 build/
