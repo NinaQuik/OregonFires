@@ -5,6 +5,13 @@ __pycache__/
 
 # C extensions
 *.so
+#Exlude the large sqlite file
+FPA_FOD_20170508.sqlite
+
+#Exlcude the large .csv file
+oregon_fires.csv
+
+config.py
 
 # Distribution / packaging
 .Python
