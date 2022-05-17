@@ -90,7 +90,6 @@ Here is the ERD containing the graphical representation of table relationships:
 
 ![ERD](/Resources/ERD.png)
 
-We are exploring also using air quality data.  If chosen, additional tables will be created and added to the database.
 
 ## Presentation
 Our presentation will likely contain the following:
@@ -109,4 +108,5 @@ Our presentation will likely contain the following:
 
 Team: Alex Dallman, Jovan Humphrey, Nina Q
 
-Source: https://www.kaggle.com/datasets/rtatman/188-million-us-wildfires
+Sources: https://www.kaggle.com/datasets/rtatman/188-million-us-wildfires
+         https://www.ncdc.noaa.gov/cag/county/mapping/35/pcp/200506/1/value

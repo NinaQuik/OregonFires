@@ -13,6 +13,12 @@ oregon_fires.csv
 
 config.py
 
+config.py
+# Large files
+oregon_fires.csv
+35-pcp.csv
+FPA_FOD_20170508.sqlite
+
 # Distribution / packaging
 .Python
 build/

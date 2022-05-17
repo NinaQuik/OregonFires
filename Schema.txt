@@ -1,0 +1,20 @@
+SELECT p.year, 
+	   p.county_code,
+	   p.month,
+	   t.avg_temp,
+	   COALESCE(ROUND(CAST (SUM(fr.fire_size) AS NUMERIC),2),0) as total_acres_fires, 
+	  Count(fr.fod_id) as total_num_fires, 
+	  COALESCE(ROUND(CAST (MAX(fr.fire_size) AS NUMERIC),2),0 )as max_fire_size,
+	  ROUND(CAST (AVG(p.inches) AS NUMERIC),2) as avg_precipitation 
+INTO summary_statistics	  
+FROM precipitation as p
+LEFT JOIN fires as fr
+	ON fr.discovery_month = p.month 
+	AND fr.fire_year = p.year
+	AND fr.county_code = p.county_code
+JOIN temperatures as t
+	ON t.month = p.month
+	AND t.year = p.year
+	AND t.county_code = p.county_code
+GROUP BY p.year, p.county_code, p.month, t.avg_temp
+ORDER BY p.year, p.county_code, p.month
