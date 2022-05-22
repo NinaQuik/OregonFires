@@ -1,0 +1,14 @@
+stat_cause_code,stat_cause_descr
+1.0,Lightning
+2.0,Equipment Use
+3.0,Smoking
+4.0,Campfire
+5.0,Debris Burning
+6.0,Railroad
+7.0,Arson
+8.0,Children
+9.0,Miscellaneous
+10.0,Fireworks
+11.0,Powerline
+12.0,Structure
+13.0,Missing/Undefined
