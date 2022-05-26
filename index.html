@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oregon-Fires</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- d3 JavaScript -->
+     <script src="https://d3js.org/d3.v5.min.js"></script>
+
+</head>
+<body style="background-color:rgb(27, 24, 21)">
+    <div class="container-fluid">
+        <div class="row" id="banner">
+          <div class="col-md-12 jumbotron text-center">
+            <h1>Oregon Fires</h1>
+            <h3>10 acres and greater. Years 1992 - 2015. </h3>
+            <br>
+            <h4 style="color:#E9D8A6">Select a Year:</h4>
+            <select id="selectOption" onchange="optionChanged(this.value, document.getElementById('selectCause').value)">
+                <option value="allyears">All Years (1992 - 2015) </option>
+            </select>
+            <h4 style="color:#E9D8A6">Select a Cause:</h4>
+            <select id="selectCause" onchange="optionChanged(document.getElementById('selectOption').value, this.value)">
+                <option value="allcauses">All Causes </option>
+            </select>
+          </div>
+        </div>
+      </div>   
+    <div class="container-fluid" id="mapid">   
+        <div class ="row">
+            <div class="col-md-10">
+            </div>
+        </div>
+    </div>
+        
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <!-- API key -->
+    <script type="text/javascript" src="static/js/config.js"></script>
+    <!-- Our JavaScript -->
+    <script type="text/javascript" src="static/js/logic.js"></script>
+    <!--d3.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>    
+</body>
+</html>

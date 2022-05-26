@@ -1,0 +1,16 @@
+html,
+body,
+#mapid {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.jumbotron {
+    background-image: url("../images/wildfire.jpeg");
+    background-size: 100% 100%;
+    text-align: center;
+    } 
+h4{
+    color:#E9D8A6;
+}
