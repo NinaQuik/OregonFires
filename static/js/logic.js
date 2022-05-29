@@ -5,7 +5,7 @@ console.log("working");
 var oregonCounties = "https://data.oregon.gov/resource/fegw-hszq.geojson";
 //var oregonFires = "Resources/largeFires.geojson";
 var oregonFires = "https://nqfinalprojectoregonfires.s3.us-west-2.amazonaws.com/largeFires.json";
-var fireCauses = "Resources/fire_causes.csv";
+var fireCauses = "https://nqfinalprojectoregonfires.s3.us-west-2.amazonaws.com/fire_causes.csv";
 
 function init() {
   // Grab a reference to the dropdown select element
