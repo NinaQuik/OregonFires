@@ -1,5 +1,7 @@
 from flask_cors import CORS, cross_origin
-from flask import Flask, render_template
+from flask import Flask, render_template, request, url_for
+import os
+import requests
 
 
 
@@ -10,5 +12,8 @@ CORS(app)
 def welcome():
     return render_template('index.html')
     logging.getLogger('flask_cors').level = logging.DEBUG
+    
+
 if __name__ == '__main__':
-    app.run(debug=True)    
+    app.run(debug=True) 
+    

@@ -6,6 +6,7 @@ var oregonCounties = "https://data.oregon.gov/resource/fegw-hszq.geojson";
 //var oregonFires = "Resources/largeFires.geojson";
 var oregonFires = "https://nqfinalprojectoregonfires.s3.us-west-2.amazonaws.com/largeFires.json";
 var fireCauses = "https://nqfinalprojectoregonfires.s3.us-west-2.amazonaws.com/fire_causes.csv";
+var mapbox_token = "pk.eyJ1IjoibmluYXF1aWNrIiwiYSI6ImNsMG81enhqazEyd28zZXQ0Yjd6emFyMXgifQ.4dFhI27XDLgFRZsuHQ6QdQ"
 
 function init() {
   // Grab a reference to the dropdown select element
@@ -61,7 +62,7 @@ let sat = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?a
     id: 'mapbox/satellite-v9',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: API_KEY
+    accessToken: mapbox_token
 });
 
 let street = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
@@ -70,7 +71,7 @@ let street = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y
     id: 'mapbox/streets-v11',
     tileSize: 512,
     zoomOffset: -1,
-    accessToken: API_KEY
+    accessToken: mapbox_token
 });
 
 // Create baseMaps to add to map and layer control
