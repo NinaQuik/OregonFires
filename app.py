@@ -1,7 +1,6 @@
 from flask_cors import CORS, cross_origin
-from flask import Flask, render_template, request, url_for
-import os
-import requests
+from flask import Flask, render_template
+
 
 
 
